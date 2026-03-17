@@ -30,3 +30,40 @@ sudo systemctl restart jenkins
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 sudo systemctl status jenkins
 sudo journalctl -u jenkins -f
+sudo yum update -y
+sudo mkdir devops-cicd-project
+cd devops-cicd-project
+touch index.html
+sudo touch index.html
+
+git push -u origin main
+sudo touch Dockerfile
+sudo vi Dockerfile
+sudo touch Jenkinsfile
+sudo vi Jenkinsfile
+git init
+git add .
+git commit -m "Initial commit for DevOps CI/CD project"
+git branch -M main
+
+git push -u origin main
+git init
+git add .
+git commit -m "Initial commit for DevOps CI/CD project"
+git branch -M main
+git remote add origin https://github.com/salmonch/devops-cicd-pipeline.git
+git push -u origin main
+cd
+git init
+git add .
+git commit -m "Initial commit for DevOps CI/CD project"
+git branch -M main
+git remote add origin https://github.com/salmonch/devops-cicd-project.git
+git push -u origin main
+cd devops-cicd-project
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/salmonch/devops-cicd-project.git
+git push -u origin main
